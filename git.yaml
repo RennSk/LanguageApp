@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+spec:
+  replicas: 3
+  template:
+    spec:
+      containers:
+      - env:
+        name: asd-activation-switchin-slave
+        resources:
+          limits:
+            cpu: "4"
+            memory: 6Gi
+          requests:
+            cpu: 1500m
+            memory: 3Gi
