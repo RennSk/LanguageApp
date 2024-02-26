@@ -5,11 +5,11 @@ spec:
   template:
     spec:
       containers:
-      - env:
+      - env: null
         name: ssd-activation-switchin-slave
         resources:
           limits:
-            cpu: "4"
+            cpu: '9'
             memory: 6Gi
           requests:
             cpu: 1500m
