@@ -6,7 +6,7 @@ spec:
     spec:
       containers:
       - env:
-        name: asd-activation-switchin-slave
+        name: ssd-activation-switchin-slave
         resources:
           limits:
             cpu: "4"
