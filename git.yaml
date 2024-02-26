@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 spec:
-  replicas: 3
+  replicas: 9
   template:
     spec:
       containers:
