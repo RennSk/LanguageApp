@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 spec:
-  replicas: 9
+  replicas: 2
   template:
     spec:
       containers:
@@ -9,7 +9,7 @@ spec:
         name: ssd-activation-switchin-slave
         resources:
           limits:
-            cpu: '122'
+            cpu: '900'
             memory: 6Gi
           requests:
             cpu: 1500000m
