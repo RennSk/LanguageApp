@@ -9,8 +9,8 @@ spec:
         name: ssd-activation-switchin-slave
         resources:
           limits:
-            cpu: '900'
+            cpu: '1'
             memory: 6Gi
           requests:
-            cpu: 1500000m
+            cpu: 15m
             memory: 3Gi
