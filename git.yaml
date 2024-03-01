@@ -10,7 +10,7 @@ spec:
         resources:
           limits:
             cpu: '1'
-            memory: 6Gi
+            memory: 1Gi
           requests:
-            cpu: 15m
-            memory: 3Gi
+            cpu: 1m
+            memory: 1Gi
