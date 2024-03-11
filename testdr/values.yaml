@@ -1,2 +1,2 @@
-    values : 3
-    replicaValues : 4
+replicaValues: 10
+values: 3
