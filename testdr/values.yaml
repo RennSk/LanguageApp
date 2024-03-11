@@ -1,3 +1,2 @@
-
-    nuovaChiave: valoreNuovaChiave
-    
+    values : 3
+    replicaValues : 4
