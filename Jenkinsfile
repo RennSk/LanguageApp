@@ -12,13 +12,12 @@ pipeline {
         }
         stage('Deploy to Minikube') {
             steps {
-                kubernetesDeploy(
-        
-                  configs: 'git.yaml',
-        
-                  kubeconfigId: 'mykubeconfig'
-        
-                )
+                script{
+                    kubernetesDeploy(
+                      configs: 'git.yaml',
+                      kubeconfigId: 'mykubeconfig'
+                    )
+                }
             }
         }
     }
