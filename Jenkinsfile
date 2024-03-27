@@ -1,15 +1,24 @@
 pipeline {
-    agent any
-    
+    agent {
+        kubernetes {
+          label 'mykubeconfig'
+        }
+      }
     stages {
         stage('Clone repository') {
             steps {
-                echo "ciao"
+                git 'https://github.com/RennSk/LanguageApp.git'
             }
         }
         stage('Deploy to Minikube') {
             steps {
-                echo "deploy"
+                kubernetesDeploy(
+        
+                  configs: 'git.yaml',
+        
+                  kubeconfigId: 'mykubeconfig'
+        
+                )
             }
         }
     }
